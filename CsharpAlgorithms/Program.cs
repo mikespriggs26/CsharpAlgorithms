@@ -42,39 +42,129 @@ namespace CsharpAlgorithms
             //}
 
             //******Grading Students*****SUCCESS!!!!
-            int[] array = new int[] { 73, 67, 38, 33 };
-            int[] array2 = new int[array.Length];
+            //int[] array = new int[] { 73, 67, 38, 33 };
+            //int[] array2 = new int[array.Length];
 
-            for (int i = 0; i < array.Length; i++)
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    if(array[i] < 38)
+            //    {
+            //        array2[i] = array[i];
+            //    }
+            //    else
+            //    {
+            //        if (array[i] % 5 == 0)
+            //        {
+            //            array2[i] = array[i];
+            //        }
+            //        else if(array[i] % 5 == 3)
+            //        {
+            //            array2[i] = array[i] + 2;
+            //        }
+            //        else if(array[i] % 5 == 4)
+            //        {
+            //            array2[i] = array[i] + 1;
+            //        }
+            //        else if(array[i] % 5 < 3)
+            //        {
+            //            array2[i] = array[i];
+            //        }
+            //    }
+            //}
+            //foreach (var item in array2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //*****************Apple and Orange**************SUCCESS!!!
+            //int[] apples = new int[] { -2,2,1 };
+            //int[] oranges = new int[] { 5,-6};
+            //int appleCounter = 0;
+            //int orangeCounter = 0;            
+
+            //int s = 7;  //start of house
+            //int t = 11;  //end of house
+            //int a = 5;  //location of apple tree
+            //int b = 15;  //location of orange tree
+
+            //for (int i = 0; i < apples.Length; i++)
+            //{
+            //    if (apples[i] + a >= s && apples[i] + a <= t)
+            //    {
+            //        appleCounter++;
+            //    }
+            //    else
+            //    {
+            //        continue;
+            //    }
+            //}
+            //for (int i = 0; i < oranges.Length; i++)
+            //{
+            //    if (oranges[i] + b >= s && oranges[i] + b <= t)
+            //    {
+            //        orangeCounter++;
+            //    }
+            //    else
+            //    {
+            //        continue;
+            //    }
+            //}
+            //Console.WriteLine(appleCounter);
+            //Console.WriteLine(orangeCounter);
+
+            //************Kangaroo***************SUCCESS!!!
+            //int x1 = 0;  //kangaroo1 start position
+            //int v1 = 3;  //kangaroo1 jump distance
+            //int x2 = 4;  //kangaroo2 start position
+            //int v2 = 2;  //kangaroo2 jump distance
+            //int landingSpot1 = x1 + v1;
+            //int landingSpot2 = x2 + v2;
+            //bool isSameSpot = false;
+
+            //for (int i = 0; i < 10000; i++)
+            //{
+            //    if (landingSpot1 == landingSpot2)
+            //    {
+            //        isSameSpot = true;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        landingSpot1 += v1;
+            //        landingSpot2 += v2;
+            //    }
+            //}
+            //if (isSameSpot == true)
+            //{
+            //    Console.WriteLine("YES");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("NO");
+            //}
+
+            //*************Birthday Chocolate
+            int[] s = new int[] { 1, 2, 1, 3, 2 };
+            int m = 3;
+            int d = 2;
+            int sum = 0;
+            int counter = 0;
+
+            for(int i = 0; i < s.Length; i++)
             {
-                if(array[i] < 38)
+                for (int j = 0; j < d; j++)
                 {
-                    array2[i] = array[i];
+                   
+                    sum += s[i + j];
                 }
-                else
+                Console.WriteLine(sum);
+                if(sum == m)
                 {
-                    if (array[i] % 5 == 0)
-                    {
-                        array2[i] = array[i];
-                    }
-                    else if(array[i] % 5 == 3)
-                    {
-                        array2[i] = array[i] + 2;
-                    }
-                    else if(array[i] % 5 == 4)
-                    {
-                        array2[i] = array[i] + 1;
-                    }
-                    else if(array[i] % 5 < 3)
-                    {
-                        array2[i] = array[i];
-                    }
+                    counter++;
                 }
             }
-            foreach (var item in array2)
-            {
-                Console.WriteLine(item);
-            }
+            Console.WriteLine(counter);
+
             Console.ReadKey();
             
         }
