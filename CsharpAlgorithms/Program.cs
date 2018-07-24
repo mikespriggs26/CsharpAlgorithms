@@ -143,27 +143,57 @@ namespace CsharpAlgorithms
             //    Console.WriteLine("NO");
             //}
 
-            //*************Birthday Chocolate
-            int[] s = new int[] { 1, 2, 1, 3, 2 };
-            int m = 3;
-            int d = 2;
+            int[] bill = new int[] { 3, 10, 2, 9 };
+            int n = 4;  // # of items
+            int b = 7; // what Anna paid
+            int k = 1;  // index of item not eaten
             int sum = 0;
-            int counter = 0;
 
-            for(int i = 0; i < s.Length; i++)
+            for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < d; j++)
+                if (i == k)
                 {
-                   
-                    sum += s[i + j];
+                    continue;
                 }
-                Console.WriteLine(sum);
-                if(sum == m)
+                else
                 {
-                    counter++;
+                    sum += bill[i];
                 }
             }
-            Console.WriteLine(counter);
+            int annaShare = sum / 2;
+            if (annaShare == b)
+            {
+                Console.WriteLine("Bon Appetit");
+            }
+            else
+            {
+                Console.WriteLine(b - annaShare);
+            }
+
+
+
+
+            //*************Birthday Chocolate             NOT SOLVED
+            //int[] s = new int[] { 1, 2, 1, 3, 2 };
+            //int m = 3;
+            //int d = 2;
+            //int sum = 0;
+            //int counter = 0;
+
+            //for(int i = 0; i < s.Length; i++)
+            //{
+            //    for (int j = 0; j < d; j++)
+            //    {
+                   
+            //        sum += s[i + j];
+            //    }
+            //    Console.WriteLine(sum);
+            //    if(sum == m)
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine(counter);
 
             Console.ReadKey();
             

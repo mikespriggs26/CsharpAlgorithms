@@ -1,7 +1,7 @@
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\bin\Debug\CsharpAlgorithms.exe.config
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\bin\Debug\CsharpAlgorithms.exe
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\bin\Debug\CsharpAlgorithms.pdb
-C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\obj\Debug\CsharpAlgorithms.csprojResolveAssemblyReference.cache
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\obj\Debug\CsharpAlgorithms.csproj.CoreCompileInputs.cache
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\obj\Debug\CsharpAlgorithms.exe
 C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\obj\Debug\CsharpAlgorithms.pdb
+C:\Users\mikes\source\repos\CsharpAlgorithms\CsharpAlgorithms\obj\Debug\CsharpAlgorithms.csprojResolveAssemblyReference.cache
