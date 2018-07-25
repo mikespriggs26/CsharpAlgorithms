@@ -143,32 +143,80 @@ namespace CsharpAlgorithms
             //    Console.WriteLine("NO");
             //}
 
-            int[] bill = new int[] { 3, 10, 2, 9 };
-            int n = 4;  // # of items
-            int b = 7; // what Anna paid
-            int k = 1;  // index of item not eaten
-            int sum = 0;
+            //**************************  MIGRATORY BIRDS    SUCCESS!!!
+            //int counter1 = 0;
+            //int counter2 = 0;
+            //int counter3 = 0;
+            //int counter4 = 0;
+            //int counter5 = 0;
 
-            for (int i = 0; i < n; i++)
-            {
-                if (i == k)
-                {
-                    continue;
-                }
-                else
-                {
-                    sum += bill[i];
-                }
-            }
-            int annaShare = sum / 2;
-            if (annaShare == b)
-            {
-                Console.WriteLine("Bon Appetit");
-            }
-            else
-            {
-                Console.WriteLine(b - annaShare);
-            }
+            //int[] ar = new int[] { 1, 4, 4, 4, 5, 3 };
+            //for (int i = 0; i < ar.Length; i++)
+            //{
+            //    if (ar[i] == 1)
+            //        counter1++;
+            //    if (ar[i] == 2)
+            //        counter2++;
+            //    if (ar[i] == 3)
+            //        counter3++;
+            //    if (ar[i] == 4)
+            //        counter4++;
+            //    if (ar[i] == 5)
+            //        counter5++;
+
+            //}
+            //int maxNum = 0;
+            //int[] num = new int[] { counter1, counter2, counter3, counter4, counter5 };
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    if (num[i] > maxNum)
+            //    {
+            //        maxNum = num[i];
+                    
+            //    }
+            //}
+            //if (maxNum == counter1)
+            //    maxNum = 1;
+            //else if (maxNum == counter2)
+            //    maxNum = 2;
+            //else if (maxNum == counter3)
+            //    maxNum = 3;
+            //else if (maxNum == counter4)
+            //    maxNum = 4;
+            //else if (maxNum == counter5)
+            //    maxNum = 5;
+
+            //Console.WriteLine(maxNum);
+          
+
+
+            //***************************       NOT SOLVED
+            //int[] bill = new int[] { 3, 10, 2, 9 };
+            //int n = 4;  // # of items
+            //int b = 7; // what Anna paid
+            //int k = 1;  // index of item not eaten
+            //int sum = 0;
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (i == k)
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        sum += bill[i];
+            //    }
+            //}
+            //int annaShare = sum / 2;
+            //if (annaShare == b)
+            //{
+            //    Console.WriteLine("Bon Appetit");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(b - annaShare);
+            //}
 
 
 
