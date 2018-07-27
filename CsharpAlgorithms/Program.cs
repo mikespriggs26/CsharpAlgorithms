@@ -172,7 +172,7 @@ namespace CsharpAlgorithms
             //    if (num[i] > maxNum)
             //    {
             //        maxNum = num[i];
-                    
+
             //    }
             //}
             //if (maxNum == counter1)
@@ -187,8 +187,10 @@ namespace CsharpAlgorithms
             //    maxNum = 5;
 
             //Console.WriteLine(maxNum);
-          
 
+            //******Designer PDF Viewer
+            int[] h = new int[] { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
+            char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', };
 
             //***************************       NOT SOLVED
             //int[] bill = new int[] { 3, 10, 2, 9 };
@@ -242,6 +244,8 @@ namespace CsharpAlgorithms
             //    }
             //}
             //Console.WriteLine(counter);
+
+
 
             Console.ReadKey();
             
