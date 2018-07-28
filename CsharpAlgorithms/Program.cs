@@ -188,9 +188,52 @@ namespace CsharpAlgorithms
 
             //Console.WriteLine(maxNum);
 
-            //******Designer PDF Viewer
-            int[] h = new int[] { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
-            char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', };
+            //******Designer PDF Viewer          SUCCESS!!!!
+            //int[] h = new int[] { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
+            //int[] k = new int[] { 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7, };
+            ////char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', };
+            //string alphabet = "abcdefghijklmnopqrstuvwxyz";
+            //string word = "zaba";
+            //int maxHeight = 0;
+
+
+            //for (int i = 0; i < word.Length; i++)
+            //{
+            //    int index = alphabet.IndexOf(word[i]);
+            //    int height = k[index];
+            //    if( height > maxHeight)
+            //    {
+            //        maxHeight = height;
+            //    }
+            //}
+            //int area = maxHeight * word.Length;
+            //Console.WriteLine(area);
+
+            //*************Utopian Tree
+            int[] period = new int[] { 0, 1, 4 };
+            
+            foreach (var item in period)
+            {
+
+                int height = 1;
+                for (int i = 0; i < item; i++)
+                {
+                    
+                    if(i % 2 == 0)
+                    {
+                        height= height * 2;
+                    }
+                    if(i % 2 == 1)
+                    {
+                        height++;
+                    }
+                }
+                Console.WriteLine(height);
+            }
+            
+
+
+              
 
             //***************************       NOT SOLVED
             //int[] bill = new int[] { 3, 10, 2, 9 };
