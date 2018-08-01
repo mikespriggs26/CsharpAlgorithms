@@ -10,6 +10,33 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //*********Mini-Max Sum   SUCCESS!!!!
+            //int[] arr = new int[] { 1, 2, 3, 4, 5, };
+            //double[] arr = new double[] { 256741038, 623958417, 467905213, 714532089, 938071625 };
+            //double arrSum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+            //double minSum = arrSum;
+            //double maxSum = 0;
+
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+
+            //    double testSum = arrSum - arr[i];
+            //    //Console.WriteLine(testSum);
+            //    if (testSum > maxSum)
+            //    {
+            //        maxSum = testSum;
+            //    }
+            //    if (testSum < minSum)
+            //    {
+            //        minSum = testSum;
+            //    }
+
+            //}
+            //Console.WriteLine(minSum + " " + maxSum);
+            
+
+
             //int ones = 0;
             //int twos = 0;
             //int threes = 0;
@@ -209,31 +236,31 @@ namespace CsharpAlgorithms
             //int area = maxHeight * word.Length;
             //Console.WriteLine(area);
 
-            //*************Utopian Tree
-            int[] period = new int[] { 0, 1, 4 };
-            
-            foreach (var item in period)
-            {
+            //*************Utopian Tree                 NOT SURE IF THIS IS DONE
+            //int[] period = new int[] { 0, 1, 4 };
 
-                int height = 1;
-                for (int i = 0; i < item; i++)
-                {
-                    
-                    if(i % 2 == 0)
-                    {
-                        height= height * 2;
-                    }
-                    if(i % 2 == 1)
-                    {
-                        height++;
-                    }
-                }
-                Console.WriteLine(height);
-            }
-            
+            //foreach (var item in period)
+            //{
+
+            //    int height = 1;
+            //    for (int i = 0; i < item; i++)
+            //    {
+
+            //        if(i % 2 == 0)
+            //        {
+            //            height= height * 2;
+            //        }
+            //        if(i % 2 == 1)
+            //        {
+            //            height++;
+            //        }
+            //    }
+            //    Console.WriteLine(height);
+            //}
 
 
-              
+
+
 
             //***************************       NOT SOLVED
             //int[] bill = new int[] { 3, 10, 2, 9 };
@@ -277,7 +304,7 @@ namespace CsharpAlgorithms
             //{
             //    for (int j = 0; j < d; j++)
             //    {
-                   
+
             //        sum += s[i + j];
             //    }
             //    Console.WriteLine(sum);
