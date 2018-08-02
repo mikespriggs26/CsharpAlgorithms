@@ -10,6 +10,39 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //*************Time Conversion  SUCCESS!!!
+            //string s = "01:05:45AM";
+            //char a = s[0];
+            //char b = s[1];
+            //char c = s[8];
+            //char d = s[9];
+            //string segment = s.Substring(2, 6);
+            //string str = a.ToString() + b.ToString();
+            //string ampm = c.ToString() + d.ToString();
+            //int hours = int.Parse(str);
+
+            //if (ampm.ToLower() == "pm" && hours == 12)
+            //{
+            //    hours = 12;
+            //}
+            //else if (ampm.ToLower() == "pm")
+            //{
+            //    hours += 12;
+            //}
+            //string hour = hours.ToString();
+            //if (ampm == "AM"  && hours == 12)
+            //{
+            //    hour = "00";
+            //}
+            //else if(ampm == "AM")
+            //{
+            //    hour = str;
+            //}
+            
+            //string result = hour + segment;
+            //Console.WriteLine(result);
+
+
             //*********Mini-Max Sum   SUCCESS!!!!
             //int[] arr = new int[] { 1, 2, 3, 4, 5, };
             //double[] arr = new double[] { 256741038, 623958417, 467905213, 714532089, 938071625 };
@@ -34,7 +67,7 @@ namespace CsharpAlgorithms
 
             //}
             //Console.WriteLine(minSum + " " + maxSum);
-            
+
 
 
             //int ones = 0;
