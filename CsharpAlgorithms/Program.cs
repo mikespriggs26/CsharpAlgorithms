@@ -10,6 +10,68 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
+            //int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
+            int[] arr = new int[] { 1, 13, 3, 8, 14, 9, 4, 4 };
+            int n = arr.Length; 
+            var sortedSticks = arr.OrderByDescending(x => x).ToList();
+            while (n > 0)
+
+            {
+                
+                Console.WriteLine(n);
+                var smallestStickLength = sortedSticks[n - 1];
+
+                for (int i = n - 1; i >= 0; i--)
+                {
+
+                    sortedSticks[i] -= smallestStickLength;
+                    if (sortedSticks[i] == 0)
+                        n--;
+                }
+            }
+
+
+            //int counter = 0;
+            //List<int> list = new List<int>();
+            //list.AddRange(arr.OrderByDescending(x => x));
+            //List<int> newList = new List<int>();
+
+            //for (int i = 0; i <= list.Count;i ++)
+            //{
+            //    counter = 0;
+            //    int minValue = arr.Min();
+
+            //    for (int j = 0; j < list.Count; j++)
+            //    {
+
+            //        if (list[j] > 0)
+            //        {
+
+            //            counter++;
+            //            list[j] -= minValue;
+            //        }
+
+            //    }
+            //    if (counter > 0)
+            //    {
+            //        newList.Add(counter);
+            //    }
+            //}
+            //int[] newArr = new int[newList.Count];
+            //for (int i = 0; i < newArr.Length; i++)
+            //{
+
+            //        newArr[i] = newList[i];
+
+            //}
+            //foreach (var item in newArr)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+
             //*************Time Conversion  SUCCESS!!!
             //string s = "01:05:45AM";
             //char a = s[0];
@@ -38,7 +100,7 @@ namespace CsharpAlgorithms
             //{
             //    hour = str;
             //}
-            
+
             //string result = hour + segment;
             //Console.WriteLine(result);
 
