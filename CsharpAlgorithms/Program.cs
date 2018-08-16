@@ -10,26 +10,37 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //Jumping on the Clouds: Revisited
+            int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
+            int k = 2;  //length of the jump
+            int energyLevel = 100;
+            while (true)
+            {
+
+            }
+
+
+
             //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
             //int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
-            int[] arr = new int[] { 1, 13, 3, 8, 14, 9, 4, 4 };
-            int n = arr.Length; 
-            var sortedSticks = arr.OrderByDescending(x => x).ToList();
-            while (n > 0)
+            //int[] arr = new int[] { 1, 13, 3, 8, 14, 9, 4, 4 };
+            //int n = arr.Length; 
+            //var sortedSticks = arr.OrderByDescending(x => x).ToList();
+            //while (n > 0)
 
-            {
+            //{
                 
-                Console.WriteLine(n);
-                var smallestStickLength = sortedSticks[n - 1];
+            //    Console.WriteLine(n);
+            //    var smallestStickLength = sortedSticks[n - 1];
 
-                for (int i = n - 1; i >= 0; i--)
-                {
+            //    for (int i = n - 1; i >= 0; i--)
+            //    {
 
-                    sortedSticks[i] -= smallestStickLength;
-                    if (sortedSticks[i] == 0)
-                        n--;
-                }
-            }
+            //        sortedSticks[i] -= smallestStickLength;
+            //        if (sortedSticks[i] == 0)
+            //            n--;
+            //    }
+            //}
 
 
             //int counter = 0;
