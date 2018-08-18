@@ -13,20 +13,22 @@ namespace CsharpAlgorithms
             //Jumping on the Clouds: Revisited
             int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
             int k = 2;  //length of the jump
-            int energyLevel = 100;
+            int e = 100;
             int index = 0;
             int newIndex = (index + k) % c.Length;
 
-            while (c[newIndex] != 0)
+            while (newIndex != 0)
             {
-                index += k;
-                energyLevel--;
-
-                Console.WriteLine(c[newIndex]);
-                if(c[newIndex] == 1)
+                
+                e--;
+                newIndex = (index + k) % c.Length;
+                //Console.WriteLine(c[newIndex]);
+                if (c[newIndex] == 1)
                 {
-                    energyLevel = energyLevel - 2;
+                    e = e - 2;
                 }
+                index += k;
+                Console.WriteLine(e);
             }
 
             Console.WriteLine(energyLevel);
