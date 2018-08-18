@@ -14,12 +14,22 @@ namespace CsharpAlgorithms
             int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
             int k = 2;  //length of the jump
             int energyLevel = 100;
-            while (true)
-            {
+            int index = 0;
+            int newIndex = (index + k) % c.Length;
 
+            while (c[newIndex] != 0)
+            {
+                index += k;
+                energyLevel--;
+
+                Console.WriteLine(c[newIndex]);
+                if(c[newIndex] == 1)
+                {
+                    energyLevel = energyLevel - 2;
+                }
             }
 
-
+            Console.WriteLine(energyLevel);
 
             //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
             //int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
