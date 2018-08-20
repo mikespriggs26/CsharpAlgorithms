@@ -10,29 +10,43 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
-            //Jumping on the Clouds: Revisited
-            int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
-            int k = 2;  //length of the jump
-            int e = 100;
-            int index = 0;
-            int newIndex = (index + k) % c.Length;
+            //********Modified Kaprekar Numbers
+            int p = 0;
+            int q = 100;
 
-            while (newIndex != 0)
+            for (int i = p; i <= q; i++)
             {
-                
-                e--;
-                newIndex = (index + k) % c.Length;
-                //Console.WriteLine(c[newIndex]);
-                if (c[newIndex] == 1)
+                int num = i * i;
+                if (num = )
                 {
-                    e = e - 2;
+
                 }
-                index += k;
-                Console.WriteLine(e);
             }
 
-            Console.WriteLine(energyLevel);
 
+
+            //Jumping on the Clouds: Revisited
+            //int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
+            //int k = 2;  //length of the jump
+            //int e = 100;
+            //int index = 0;
+            //int newIndex = (index + k) % c.Length;
+
+            //while (newIndex != 0)
+            //{
+                
+            //    e--;
+            //    newIndex = (index + k) % c.Length;
+            //    if (c[newIndex] == 1)
+            //    {
+            //        e = e - 2;
+            //    }
+            //    index += k;
+            //    Console.WriteLine(e);
+            //}
+            //Console.WriteLine(e);
+
+            //*************
             //int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
             //int[] arr = new int[] { 5, 4, 4, 2, 2, 8 };
             //int[] arr = new int[] { 1, 13, 3, 8, 14, 9, 4, 4 };
