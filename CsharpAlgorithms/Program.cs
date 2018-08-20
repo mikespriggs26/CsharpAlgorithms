@@ -17,10 +17,13 @@ namespace CsharpAlgorithms
             for (int i = p; i <= q; i++)
             {
                 int num = i * i;
-                if (num = )
-                {
+                string numStr = num.ToString();
+                int digits = numStr.Length / 2;
+                var leftHalf = ;
+                var rightHalf
+                
 
-                }
+
             }
 
 
