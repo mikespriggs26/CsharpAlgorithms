@@ -10,22 +10,39 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
-            //********Modified Kaprekar Numbers
-            int p = 0;
-            int q = 100;
+            //********Modified Kaprekar Numbers        UNSOLVED
+            //int p = 0;
+            //int q = 100;
 
-            for (int i = p; i <= q; i++)
+            //for (int i = p; i <= q; i++)
+            //{
+            //    int num = i * i;
+            //    string numStr = num.ToString();
+            //    int digits = numStr.Length / 2;
+            //    var leftHalf = ;
+            //    var rightHalf
+            // }
+
+            //Breaking the Records
+            int n = 10;
+            int[] scores = new int[] {10, 5, 20, 20, 4, 5, 2, 25, 1, };
+            int firstScore = scores[0];
+            int highScore = 0;
+            int lowScore = 0;
+            foreach (var item in scores)
             {
-                int num = i * i;
-                string numStr = num.ToString();
-                int digits = numStr.Length / 2;
-                var leftHalf = ;
-                var rightHalf
-                
-
-
+                if(item > highScore)
+                {
+                    highScore = item;
+                    highScore++;
+                }
+                if(item < lowScore)
+                {
+                    lowScore++;
+                }
             }
-
+            Console.WriteLine(highScore);
+            Console.WriteLine(lowScore);
 
 
             //Jumping on the Clouds: Revisited
