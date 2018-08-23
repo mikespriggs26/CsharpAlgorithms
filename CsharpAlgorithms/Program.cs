@@ -23,27 +23,29 @@ namespace CsharpAlgorithms
             //    var rightHalf
             // }
 
-            //Breaking the Records
-            int n = 10;
-            int[] scores = new int[] {10, 5, 20, 20, 4, 5, 2, 25, 1, };
-            int firstScore = scores[0];
-            int highScore = 0;
-            int lowScore = 0;
-            foreach (var item in scores)
-            {
-                if(item > highScore)
-                {
-                    highScore = item;
-                    highScore++;
-                }
-                if(item < lowScore)
-                {
-                    lowScore++;
-                }
-            }
-            Console.WriteLine(highScore);
-            Console.WriteLine(lowScore);
+            //Breaking the Records - COMPLETED!!!
+            //int n = 10;
+            //int[] scores = new int[] {10, 5, 20, 20, 4, 5, 2, 25, 1, };
+            //int[] scores = new int[] { 3, 4, 21, 36, 10, 28, 35, 5, 24, 42, };
+            //int highScore = scores[0];
+            //int highScoreCounter = 0;
+            //int lowScore = scores[0];
+            //int lowScoreCounter = 0;
+            //for (int i = 1; i < scores.Length; i++)
+            //{
+            //    if(scores[i] > highScore)
+            //    {
+            //        highScore = scores[i];
+            //        highScoreCounter++;
+            //    }
+            //    if(scores[i] < lowScore)
+            //    {
+            //        lowScore = scores[i];
+            //        lowScoreCounter++;
+            //    }
+            //}
 
+            //int[] result = new int[2] { highScoreCounter, lowScoreCounter };
 
             //Jumping on the Clouds: Revisited
             //int[] c = new int[] { 0, 0, 1, 0, 0, 1, 1, 0, };
