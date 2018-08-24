@@ -10,19 +10,32 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
-            //Repeated String
+            //Repeated String   - COMPLETED!
             string s = "a";
-            long n = 1000000000000;
-            int counter = 0;
-            for (int i = 0; i < n; i++)
+            var n = 1000000000000;
+            var counter = 0L;
+            foreach (var item in s)
             {
-                int newIndex = i % s.Length;
-                if (s[newIndex] == 'a')
+                if (item == 'a')
                 {
                     counter++;
                 }
             }
-            Console.WriteLine(counter);
+            
+            var fullCycles = n / s.Length;
+            var partialCycles = n % s.Length;
+            var total = counter * fullCycles;
+            for (int i = 0; i < partialCycles; i++)
+            {
+                if(s[i] == 'a')
+                {
+                    total++;
+                }
+            }
+
+            Console.WriteLine(total);
+
+            
 
             //********Modified Kaprekar Numbers        UNSOLVED
             //int p = 0;
@@ -70,7 +83,7 @@ namespace CsharpAlgorithms
 
             //while (newIndex != 0)
             //{
-                
+
             //    e--;
             //    newIndex = (index + k) % c.Length;
             //    if (c[newIndex] == 1)
@@ -91,7 +104,7 @@ namespace CsharpAlgorithms
             //while (n > 0)
 
             //{
-                
+
             //    Console.WriteLine(n);
             //    var smallestStickLength = sortedSticks[n - 1];
 
