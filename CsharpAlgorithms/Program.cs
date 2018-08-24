@@ -10,6 +10,20 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //Repeated String
+            string s = "a";
+            long n = 1000000000000;
+            int counter = 0;
+            for (int i = 0; i < n; i++)
+            {
+                int newIndex = i % s.Length;
+                if (s[newIndex] == 'a')
+                {
+                    counter++;
+                }
+            }
+            Console.WriteLine(counter);
+
             //********Modified Kaprekar Numbers        UNSOLVED
             //int p = 0;
             //int q = 100;
