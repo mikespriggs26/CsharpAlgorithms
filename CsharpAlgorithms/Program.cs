@@ -10,32 +10,57 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            int[] nums = new int[] { 53, 4, 21, 36, 10, 28, 35, 5, 24, 42, };
+            int maxNum = 0;
+            foreach (var item in nums)
+            {
+                if (item > maxNum)
+                {
+                    maxNum = item;
+                }
+            }
+            Console.WriteLine(maxNum);
+
+            //Count the # of d's in a string
+            //Console.WriteLine("Please enter a string: ");
+            //string str = Console.ReadLine();
+            //int counter = 0;
+
+            //for (int i = 0; i < str.Length; i++)
+            //{
+            //    if (str[i] == 'd')
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine(counter);
+
             //Repeated String   - COMPLETED!
-            string s = "a";
-            var n = 1000000000000;
-            var counter = 0L;
-            foreach (var item in s)
-            {
-                if (item == 'a')
-                {
-                    counter++;
-                }
-            }
-            
-            var fullCycles = n / s.Length;
-            var partialCycles = n % s.Length;
-            var total = counter * fullCycles;
-            for (int i = 0; i < partialCycles; i++)
-            {
-                if(s[i] == 'a')
-                {
-                    total++;
-                }
-            }
+            //string s = "a";
+            //var n = 1000000000000;
+            //var counter = 0L;
+            //foreach (var item in s)
+            //{
+            //    if (item == 'a')
+            //    {
+            //        counter++;
+            //    }
+            //}
 
-            Console.WriteLine(total);
+            //var fullCycles = n / s.Length;
+            //var partialCycles = n % s.Length;
+            //var total = counter * fullCycles;
+            //for (int i = 0; i < partialCycles; i++)
+            //{
+            //    if(s[i] == 'a')
+            //    {
+            //        total++;
+            //    }
+            //}
 
-            
+            //Console.WriteLine(total);
+
+
 
             //********Modified Kaprekar Numbers        UNSOLVED
             //int p = 0;
