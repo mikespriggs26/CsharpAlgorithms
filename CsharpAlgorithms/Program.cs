@@ -10,16 +10,27 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] { 53, 4, 21, 36, 10, 28, 35, 5, 24, 42, };
-            int maxNum = 0;
-            foreach (var item in nums)
+            //reverse a string
+            Console.WriteLine("Please enter a word: ");
+            string str = Console.ReadLine();
+            string newString = "";
+            for (int i = str.Length - 1; i >= 0; i--)
             {
-                if (item > maxNum)
-                {
-                    maxNum = item;
-                }
+                newString += str[i];
             }
-            Console.WriteLine(maxNum);
+            Console.WriteLine(newString);
+
+            //Find the highest int in an array
+            //int[] nums = new int[] { 53, 4, 21, 36, 10, 28, 35, 5, 24, 42, };
+            //int maxNum = 0;
+            //foreach (var item in nums)
+            //{
+            //    if (item > maxNum)
+            //    {
+            //        maxNum = item;
+            //    }
+            //}
+            //Console.WriteLine(maxNum);
 
             //Count the # of d's in a string
             //Console.WriteLine("Please enter a string: ");
