@@ -10,15 +10,24 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
-            //reverse a string
-            Console.WriteLine("Please enter a word: ");
-            string str = Console.ReadLine();
-            string newString = "";
-            for (int i = str.Length - 1; i >= 0; i--)
+            //add the individual digits of an int
+            int num = 121345;
+            int sum = 0;
+            for (int n = num; n > 0; sum += n % 10, n /= 10) 
             {
-                newString += str[i];
+                Console.WriteLine(sum + "   " + n);
             }
-            Console.WriteLine(newString);
+            Console.WriteLine(sum);
+
+            ////reverse a string
+            //Console.WriteLine("Please enter a word: ");
+            //string str = Console.ReadLine();
+            //string newString = "";
+            //for (int i = str.Length - 1; i >= 0; i--)
+            //{
+            //    newString += str[i];
+            //}
+            //Console.WriteLine(newString);
 
             //Find the highest int in an array
             //int[] nums = new int[] { 53, 4, 21, 36, 10, 28, 35, 5, 24, 42, };
