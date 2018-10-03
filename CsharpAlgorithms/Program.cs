@@ -11,13 +11,13 @@ namespace CsharpAlgorithms
         static void Main(string[] args)
         {
             //add the individual digits of an int
-            int num = 121345;
-            int sum = 0;
-            for (int n = num; n > 0; sum += n % 10, n /= 10) 
-            {
-                Console.WriteLine(sum + "   " + n);
-            }
-            Console.WriteLine(sum);
+            //int num = 121345;
+            //int sum = 0;
+            //for (int n = num; n > 0; sum += n % 10, n /= 10) 
+            //{
+            //    Console.WriteLine(sum + "   " + n);
+            //}
+            //Console.WriteLine(sum);
 
             ////reverse a string
             //Console.WriteLine("Please enter a word: ");
@@ -41,6 +41,15 @@ namespace CsharpAlgorithms
             //}
             //Console.WriteLine(maxNum);
 
+            //add the digits of an int
+            int num = 246811;
+            int sum = 0;
+
+            for (int i = 246811; i > 0; sum += i % 10, i /= 10 )
+            {
+
+            }
+            Console.WriteLine(sum);
             //Count the # of d's in a string
             //Console.WriteLine("Please enter a string: ");
             //string str = Console.ReadLine();
