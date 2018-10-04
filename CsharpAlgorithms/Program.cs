@@ -19,6 +19,22 @@ namespace CsharpAlgorithms
             //}
             //Console.WriteLine(sum);
 
+            //sort an array in ascending order
+            int[] nums = new int[] { 5,4,3,8,6,2 };
+            int[] nums2 = new int[nums.Length];
+            foreach (var item in nums)
+            {
+                int x = 
+            }
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int x = nums[i];
+                if (x <)
+                {
+
+                }
+            }
+
             ////reverse a string
             //Console.WriteLine("Please enter a word: ");
             //string str = Console.ReadLine();
@@ -42,14 +58,9 @@ namespace CsharpAlgorithms
             //Console.WriteLine(maxNum);
 
             //add the digits of an int
-            int num = 246811;
-            int sum = 0;
+          
+            
 
-            for (int i = 246811; i > 0; sum += i % 10, i /= 10 )
-            {
-
-            }
-            Console.WriteLine(sum);
             //Count the # of d's in a string
             //Console.WriteLine("Please enter a string: ");
             //string str = Console.ReadLine();
