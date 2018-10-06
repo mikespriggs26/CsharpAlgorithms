@@ -10,6 +10,58 @@ namespace CsharpAlgorithms
     {
         static void Main(string[] args)
         {
+            //add the digits of an int
+
+            //sort an array in ascending order
+
+            //Is prime
+            bool isPrime = false;
+
+            for (int i = 2; i < 500; i++)
+            {
+                for (int j = 2; j < i; j++)
+                {
+                    if (j % i == 0 && i != j)
+                    {
+                        Console.WriteLine(j);
+                    }
+                }
+            }
+
+
+            //swap ints in variables without using a third variable
+            //Console.WriteLine("Enter a number:");
+            //int x = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter another number");
+            //int y = int.Parse(Console.ReadLine());
+            //Console.WriteLine("x is " + x + " and y is " + y);
+            //x = x + y;//47
+            //y = x - y;
+            //x = x - y;
+            //Console.WriteLine("x is " + x + " and y is " + y);
+
+
+            //in math.round .5 returns the even number
+            //Console.WriteLine(Math.Round(6.5));
+            //Console.WriteLine(Math.Round(11.5));
+
+
+
+            //int[] nums = new int[] { 5,4,3,8,6,2 };
+            //int[] nums2 = new int[nums.Length];
+            //foreach (var item in nums)
+            //{
+            //    int x = 
+            //}
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    int x = nums[i];
+            //    if (x <)
+            //    {
+
+            //    }
+            //}
+
             //add the individual digits of an int
             //int num = 121345;
             //int sum = 0;
@@ -19,21 +71,7 @@ namespace CsharpAlgorithms
             //}
             //Console.WriteLine(sum);
 
-            //sort an array in ascending order
-            int[] nums = new int[] { 5,4,3,8,6,2 };
-            int[] nums2 = new int[nums.Length];
-            foreach (var item in nums)
-            {
-                int x = 
-            }
-            for (int i = 0; i < nums.Length; i++)
-            {
-                int x = nums[i];
-                if (x <)
-                {
 
-                }
-            }
 
             ////reverse a string
             //Console.WriteLine("Please enter a word: ");
@@ -57,9 +95,8 @@ namespace CsharpAlgorithms
             //}
             //Console.WriteLine(maxNum);
 
-            //add the digits of an int
-          
-            
+
+
 
             //Count the # of d's in a string
             //Console.WriteLine("Please enter a string: ");
