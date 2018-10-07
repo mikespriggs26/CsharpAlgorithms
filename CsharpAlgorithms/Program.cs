@@ -11,31 +11,49 @@ namespace CsharpAlgorithms
         static void Main(string[] args)
         {
             //add the digits of an int
-            Console.WriteLine("Please enter the number");
-            int num = int.Parse(Console.ReadLine());
-            int sum = 0;
-            for (int i = num; i > 0; sum += i % 10, i /= 10)
-            {
+            //Console.WriteLine("Please enter the number");
+            //int num = int.Parse(Console.ReadLine());
+            //int sum = 0;
+            //for (int i = num; i > 0; sum += i % 10, i /= 10)
+            //{
 
-            }
-            Console.WriteLine(sum);
+            //}
+            //Console.WriteLine(sum);
 
 
 
             //sort an array in ascending order
 
+
+
             //Is prime -- NOT DONE
             //bool isPrime = false;
 
-            //for (int i = 2; i < 500; i++)
+            for (int i = 2; i < 500; i++)
+            {
+                //Console.WriteLine(i);
+                for (int j = 2; j < i; j++)
+                {
+                    if (i % j == 0 && i != j)
+                    {
+                        
+                        continue;
+                    }
+                    else
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+
+            //Asterisk pytamid
+            //for (int i = 0; i <= 5; i++)
             //{
-            //    for (int j = 2; j < i; j++)
+            //    for (int j = 0; j <= i; j++)
             //    {
-            //        if (j % i == 0 && i != j)
-            //        {
-            //            Console.WriteLine(j);
-            //        }
+            //        Console.Write("*");
             //    }
+            //    Console.WriteLine();
             //}
 
             //fibonacci series
