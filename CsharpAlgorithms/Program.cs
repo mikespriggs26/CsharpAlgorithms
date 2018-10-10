@@ -65,7 +65,16 @@ namespace CsharpAlgorithms
                     }
                 }
             }
-
+            //Factorial
+            // 7*6  
+            Console.WriteLine("Enter a number:");
+            int number = int.Parse(Console.ReadLine():
+            int result = 1;
+            for (int i = number; i > 0; i--)
+            {
+                result = result * i;
+            }
+            Console.WriteLine(result);
             //Asterisk pytamid
             //for (int i = 0; i <= 5; i++)
             //{
